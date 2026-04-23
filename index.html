@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shaik Mohammad Irfan Portfolio - AI, Full Stack, Cybersecurity Projects">
+  <title>Shaik Mohammad Irfan | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+  <nav class="navbar" role="navigation">
+    <h1>Irfan</h1>
+
+    <button class="hamburger" aria-label="Toggle navigation">☰</button>
+
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<!-- About -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    Computer Science Engineering student at NIT Puducherry with expertise in Edge AI, Computer Vision,
+    Full-Stack Development, and Cybersecurity. I build scalable systems from ML pipelines on edge devices
+    to secure backend architectures.
+  </p>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="filter-buttons">
+    <button onclick="filterProjects('all')">All</button>
+    <button onclick="filterProjects('ai')">AI</button>
+    <button onclick="filterProjects('iot')">IoT</button>
+    <button onclick="filterProjects('security')">Security</button>
+  </div>
+
+  <div class="project-container">
+
+    <article class="project-card" data-category="ai">
+      <h3>Cataract Detection Pipeline</h3>
+      <p>YOLO-based edge AI system with 98% accuracy and 300–400ms latency on Raspberry Pi.</p>
+    </article>
+
+    <article class="project-card" data-category="iot">
+      <h3>Anti-Poaching System</h3>
+      <p>IoT + Computer Vision system detecting anomalies with 98% recall.</p>
+    </article>
+
+    <article class="project-card" data-category="ai">
+      <h3>Ocean Forecasting Model</h3>
+      <p>KAN-based model predicting algal blooms using 19 years of satellite data.</p>
+    </article>
+
+    <article class="project-card" data-category="security">
+      <h3>Malware Detection Engine</h3>
+      <p>ML-based system detecting malware with 98.6% accuracy.</p>
+    </article>
+
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+  <h2>Skills</h2>
+  <ul class="skills-list">
+    <li>Python, C++, JavaScript</li>
+    <li>PyTorch, TensorFlow, YOLO</li>
+    <li>Flask, AngularJS</li>
+    <li>Docker, Kubernetes, AWS</li>
+    <li>Cybersecurity & Pen Testing</li>
+  </ul>
+</section>
+
+<!-- Experience -->
+<section id="experience">
+  <h2>Experience</h2>
+
+  <article>
+    <h3>Schneider Electric</h3>
+    <p>Graduate Engineer Trainee (2026–Present)</p>
+  </article>
+
+  <article>
+    <h3>CodTech Cybersecurity Intern</h3>
+    <p>Identified 15+ vulnerabilities including SQLi & XSS.</p>
+  </article>
+
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <h2>Contact</h2>
+
+  <form id="contactForm">
+    <label for="name">Name</label>
+    <input type="text" id="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" required></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+</main>
+
+<footer>
+  <p>© 2026 Shaik Mohammad Irfan</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
